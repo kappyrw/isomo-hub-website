@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Light mode as default with vibrant blue accents */
+:root {
+  --background: oklch(0.98 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(0.95 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(0.95 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  /* Updated primary color to vibrant blue instead of black */
+  --primary: oklch(0.456 0.194 262.43);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.708 0 0);
+  --secondary-foreground: oklch(0.145 0 0);
+  --muted: oklch(0.708 0 0);
+  --muted-foreground: oklch(0.439 0 0);
+  /* Added vibrant cyan accent color for highlights */
+  --accent: oklch(0.55 0.218 201.16);
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(0.869 0 0);
+  --input: oklch(0.95 0 0);
+  --ring: oklch(0.456 0.194 262.43);
+  /* Added vibrant gradient colors for visual interest */
+  --chart-1: oklch(0.456 0.194 262.43);
+  --chart-2: oklch(0.55 0.218 201.16);
+  --chart-3: oklch(0.6 0.18 289.5);
+  --chart-4: oklch(0.65 0.2 308.39);
+  --chart-5: oklch(0.5 0.22 180);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.95 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.456 0.194 262.43);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.55 0.218 201.16);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
+  --sidebar-border: oklch(0.869 0 0);
+  --sidebar-ring: oklch(0.456 0.194 262.43);
+}
+
+/* Dark mode with vibrant blue */
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.195 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.195 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  /* Updated primary color to bright blue for dark mode */
+  --primary: oklch(0.62 0.23 264.52);
+  --primary-foreground: oklch(0.145 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  /* Updated accent color to bright cyan for dark mode */
+  --accent: oklch(0.7 0.25 200);
+  --accent-foreground: oklch(0.145 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.195 0 0);
+  --ring: oklch(0.62 0.23 264.52);
+  --chart-1: oklch(0.62 0.23 264.52);
+  --chart-2: oklch(0.7 0.25 200);
+  --chart-3: oklch(0.68 0.22 289.5);
+  --chart-4: oklch(0.75 0.24 308.39);
+  --chart-5: oklch(0.65 0.26 180);
+  --sidebar: oklch(0.195 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.62 0.23 264.52);
+  --sidebar-primary-foreground: oklch(0.145 0 0);
+  --sidebar-accent: oklch(0.7 0.25 200);
+  --sidebar-accent-foreground: oklch(0.145 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.62 0.23 264.52);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* Updated glassmorphism for both light and dark modes */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+}
+
+.dark .glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+}
+
+.glass-dark {
+  @apply bg-black/40 backdrop-blur-md border border-white/10 rounded-lg;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Cleaned up creative hover animations to use only valid Tailwind utilities */
+@layer utilities {
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-2 hover:shadow-lg;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-lg;
+  }
+
+  .button-shine {
+    @apply relative overflow-hidden after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-gradient-to-r after:from-transparent after:via-white after:to-transparent after:opacity-0 hover:after:opacity-20 after:transition-opacity after:duration-500 after:skew-x-12;
+  }
+
+  .nav-link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+  }
+
+  .button-pulse {
+    @apply transition-all duration-300 hover:scale-105 active:scale-95;
+  }
+
+  .icon-spin {
+    @apply transition-transform duration-300 hover:rotate-12 hover:scale-110;
+  }
+}
