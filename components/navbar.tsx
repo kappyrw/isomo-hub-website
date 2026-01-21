@@ -83,7 +83,6 @@ export const Navbar = () => {
               onClick={toggleLanguage}
               className="px-3 py-2 text-sm rounded-lg transition-all hover:bg-accent/30 font-semibold hover:scale-105"
             >
-              {lang === "en" ? "FR" : "EN"}
             </button>
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 icon-spin rounded-lg transition-colors">
               {isOpen ? <X size={20} /> : <Menu size={20} />}
