@@ -45,13 +45,14 @@ export const FreeCourses = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-balance">
-            {t("home.free_courses_title") || "Master Digital Skills for Free"}
+            {t("free courses") || "Master Digital Skills for Free"}
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            {t("home.free_courses_desc") ||
+            {t("APPLY TODAY") ||
               "Start your digital journey with our free beginner courses. No credit card required, just pure knowledge."}
           </p>
         </motion.div>
+
 
         {/* Courses Grid */}
         <div className="grid md:grid-cols-2 gap-8">
