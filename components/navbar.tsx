@@ -48,8 +48,12 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="font-bold text-xl text-primary hover:scale-110 transition-transform duration-300">
-            Isomo Hub Teck
+          <Link href="/" className="hover:scale-105 transition-transform duration-300">
+            <img 
+              src="/isomo-hub-logo.png" 
+              alt="Isomo Hub Tech" 
+              className="h-70 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -78,11 +82,6 @@ export const Navbar = () => {
               aria-label="Toggle theme"
             >
               {isDark ? <Sun size={20} /> : <Moon size={20} />}
-            </button>
-            <button
-              onClick={toggleLanguage}
-              className="px-3 py-2 text-sm rounded-lg transition-all hover:bg-accent/30 font-semibold hover:scale-105"
-            >
             </button>
             <button onClick={() => setIsOpen(!isOpen)} className="md:hidden p-2 icon-spin rounded-lg transition-colors">
               {isOpen ? <X size={20} /> : <Menu size={20} />}
