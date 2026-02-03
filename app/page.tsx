@@ -11,16 +11,20 @@ import { Footer } from "@/components/footer"
 import { I18nProvider } from "@/lib/i18n-context"
 import { HowItWorks } from "@/components/home/how-it-works"
 import { FreeCourses } from "@/components/home/free-courses"
+import { CourseApplicationForm } from "@/components/home/course-application-form"
+
 
 export default function Home() {
   return (
     <I18nProvider>
       <Navbar />
       <main className="min-h-screen">
+      
         <Hero />
         <TechMarquee />
         <Services />
         <FreeCourses />
+        <CourseApplicationForm />
         <HowItWorks />
         <ValueProp />
         <Testimonials />

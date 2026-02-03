@@ -2,7 +2,7 @@
 
 import { useI18n } from "@/hooks/use-i18n"
 import { Button } from "@/components/ui/button"
-import { Code, Palette, Gift, ArrowRight } from "lucide-react"
+import { Code, Palette, Gift, ArrowRight, Video } from "lucide-react"
 import { motion } from "framer-motion"
 
 export const FreeCourses = () => {
@@ -24,6 +24,14 @@ export const FreeCourses = () => {
       duration: "3 Weeks",
       googleFormUrl: "https://forms.gle/graphic-design-course", // Replace with actual Google Form URL
       color: "from-purple-500 to-pink-500",
+    },
+    {
+      icon: Video,
+      title: "Free Video Editing Mastery",
+      description: "Learn professional video editing with Adobe Premiere Pro and DaVinci Resolve. Create stunning videos from start to finish.",
+      duration: "4 Weeks",
+      googleFormUrl: "https://forms.gle/video-editing-course", // Replace with actual Google Form URL
+      color: "from-orange-500 to-red-500",
     },
   ]
 
@@ -48,11 +56,10 @@ export const FreeCourses = () => {
             {t("free courses") || "Master Digital Skills for Free"}
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            {t("APPLY TODAY") ||
+            {t("100% free courses") ||
               "Start your digital journey with our free beginner courses. No credit card required, just pure knowledge."}
           </p>
         </motion.div>
-
 
         {/* Courses Grid */}
         <div className="grid md:grid-cols-2 gap-8">
