@@ -233,7 +233,7 @@ export const CourseApplicationForm = () => {
                 size="lg"
                 className="w-full bg-primary text-primary-foreground hover:bg-primary/90 button-shine button-pulse py-6 text-base font-semibold"
               >
-                {isSubmitting ? "Submitting..." : "Send Application"}
+                {isSubmitting ? "Submitting..." : " Submit Application"}
               </Button>
 
               <p className="text-center text-sm text-foreground/60">
