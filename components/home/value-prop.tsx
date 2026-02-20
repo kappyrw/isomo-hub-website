@@ -14,6 +14,7 @@ export const ValueProp = () => {
     t("home.value_benefit4") || "Full-Service Digital Partnership",
   ]
 
+
   return (
     <section className="py-20 max-w-7xl mx-auto px-4">
       <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -31,6 +32,7 @@ export const ValueProp = () => {
                 "We combine cutting-edge technology with creative excellence to deliver solutions that transform your business."}
             </p>
           </div>
+          
 
           <div className="space-y-4">
             {benefits.map((benefit, idx) => (

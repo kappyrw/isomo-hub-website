@@ -14,7 +14,7 @@ export const FreeCourses = () => {
       title: "Free Web Development Course",
       description: "Learn React, HTML, CSS, and JavaScript fundamentals. Build your first responsive website from scratch.",
       duration: "4 Weeks",
-      googleFormUrl: "https://forms.gle/webdev-course", // Replace with actual Google Form URL
+      googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9",
       color: "from-blue-500 to-cyan-500",
     },
     {
@@ -22,7 +22,7 @@ export const FreeCourses = () => {
       title: "Free Graphic Design Basics",
       description: "Master design principles, color theory, and learn Figma and Photoshop essentials for beginners.",
       duration: "3 Weeks",
-      googleFormUrl: "https://forms.gle/graphic-design-course", // Replace with actual Google Form URL
+      googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9",
       color: "from-purple-500 to-pink-500",
     },
     {
@@ -30,7 +30,7 @@ export const FreeCourses = () => {
       title: "Free Video Editing Mastery",
       description: "Learn professional video editing with Adobe Premiere Pro and DaVinci Resolve. Create stunning videos from start to finish.",
       duration: "4 Weeks",
-      googleFormUrl: "https://forms.gle/video-editing-course", // Replace with actual Google Form URL
+      googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9",
       color: "from-orange-500 to-red-500",
     },
   ]
@@ -53,10 +53,10 @@ export const FreeCourses = () => {
             </div>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-balance">
-            {t("free courses") || "Master Digital Skills for Free"}
+            {t("home.free_courses_title") || "Master Digital Skills for Free"}
           </h2>
           <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-            {t("100% free courses") ||
+            {t("home.free_courses_desc") ||
               "Start your digital journey with our free beginner courses. No credit card required, just pure knowledge."}
           </p>
         </motion.div>

@@ -31,9 +31,9 @@ export const CourseApplicationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const courses = [
-    { id: "web-development", label: "Web Development Course", googleFormUrl: "https://forms.gle/webdev-course" },
-    { id: "graphic-design", label: "Graphic Design Course", googleFormUrl: "https://forms.gle/graphic-design-course" },
-    { id: "video-editing", label: "Video Editing Course", googleFormUrl: "https://forms.gle/video-editing-course" },
+    { id: "web-development", label: "Web Development Course", googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9" },
+    { id: "graphic-design", label: "Graphic Design Course", googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9" },
+    { id: "video-editing", label: "Video Editing Course", googleFormUrl: "https://forms.gle/Bci47A56iCUW3KeH9" },
   ]
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
@@ -244,5 +244,5 @@ export const CourseApplicationForm = () => {
         </motion.div>
       </div>
     </section>
-    )
+  )
 }
